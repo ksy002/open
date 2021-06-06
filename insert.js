@@ -8,9 +8,10 @@ var Insert = function(name, phone, date, people, seat,email){
     this.people = people;
     this.seat = seat;
     this.email = email;
-    this.display = function(){
-        document.write(this.name+"님 예약 완료 되었습니다. <br/><br/>");
-    }
+}
+
+Insert.prototype.display = function(){
+    document.write(this.name+"님 예약 완료 되었습니다. <br/><br/>");
 }
 
 
