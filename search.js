@@ -1,11 +1,25 @@
-var search = function(value){
-    document.write(value.name+"님의 예약목록입니다. <br/>");
-    document.write("이름: "+value.name+"<br/>");
-    document.write("연락처: "+value.phone+"<br/>");
-    document.write("예약일: "+value.date+"<br/>");
-    document.write("인원수: "+value.people+"<br/>");
-    document.write("좌석: "+value.seat+"<br/><br/>");
+var search_n = function(value){
+    document.write(value.name+"님의 예약명은 "+value.name+"입니다. <br/>");
     }
 
-var list1 = search(psy);
-var list2 = search(ksy);
+var search_p = function(value){
+    document.write(value.name+"님이 예약하신 연락처는 "+value.phone+"입니다. <br/>");
+    }
+
+var search_d = function(value){
+    document.write(value.name+"님의 예약일은 "+value.date+"입니다. <br/>");
+    }    
+
+var search_np = function(value){
+    document.write(value.name+"님의 예약 인원수는 "+value.people+"입니다. <br/>");
+    } 
+    
+var search_s = function(value){
+    document.write(value.name+"님의 좌석은 "+value.seat+"입니다. <br/>");
+    }     
+
+var search_e = function(value){
+    document.write(value.name+"님이 예약하신 이메일은 "+value.email+"입니다. <br/>");
+    } 
+var list1 = search_np(psy);
+var list2 = search_s(ksy);
